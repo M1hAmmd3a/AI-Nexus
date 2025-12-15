@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="en" dir="ltr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Nexus - دليل الذكاء الاصطناعي</title>
+    <title>AI Nexus - Your AI Tools Directory</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -205,7 +205,7 @@
             <!-- Actions -->
             <div class="flex items-center gap-2">
                 <button onclick="toggleLanguage()" class="rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-colors font-bold text-xs" id="lang-btn">
-                    EN
+                    AR
                 </button>
                 <button onclick="toggleTheme()" class="rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary/10 hover:text-primary transition-colors">
                     <i data-lucide="moon" id="theme-icon" class="h-5 w-5"></i>
@@ -225,13 +225,13 @@
             </div>
 
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1]">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground/50" id="hero-title-1">دليل</span>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-foreground via-foreground to-foreground/50" id="hero-title-1">AI</span>
                 <br class="hidden md:block">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-secondary animate-gradient-x" id="hero-title-2">الذكاء الاصطناعي</span>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-secondary animate-gradient-x" id="hero-title-2">Nexus</span>
             </h1>
 
             <p class="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light" id="hero-subtitle">
-                اكتشف أفضل أدوات الذكاء الاصطناعي لاحتياجاتك
+                Discover the best AI tools for your needs
             </p>
 
             <!-- Hero Search -->
@@ -239,22 +239,13 @@
                 <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                 <div class="relative flex items-center bg-card/80 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl">
                     <i data-lucide="search" class="w-6 h-6 text-muted-foreground mx-3"></i>
-                    <input type="text" id="hero-search-input" class="w-full border-none bg-transparent shadow-none text-lg h-12 outline-none placeholder:text-muted-foreground/50" placeholder="ابحث عن الأدوات...">
+                    <input type="text" id="hero-search-input" class="w-full border-none bg-transparent shadow-none text-lg h-12 outline-none placeholder:text-muted-foreground/50" placeholder="Search for tools...">
                     <button class="h-10 w-10 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25 flex items-center justify-center transition-colors">
                         <i data-lucide="arrow-right" class="w-5 h-5 rtl:rotate-180"></i>
                     </button>
                 </div>
             </div>
         </section>
-
-        <!-- Ad Banner Top -->
-        <div class="max-w-5xl mx-auto mb-20 transform hover:scale-[1.01] transition-transform duration-500 fade-in-up" style="transition-delay: 300ms;">
-            <div class="relative overflow-hidden rounded-xl border border-dashed border-primary/10 bg-muted/50 p-4 flex flex-col items-center justify-center text-center shadow-2xl shadow-primary/5 h-[120px]">
-                <div class="absolute top-2 right-2 text-[10px] text-muted-foreground uppercase tracking-widest border border-border px-1.5 rounded" id="ad-label-top">إعلان</div>
-                <div class="w-12 h-12 mb-2 rounded-full bg-primary/10 flex items-center justify-center text-2xl">📢</div>
-                <p class="text-sm text-muted-foreground font-medium">Smart AI Advertising Space</p>
-            </div>
-        </div>
 
         <!-- Categories -->
         <section class="mb-16 sticky top-24 z-40 py-4 -mx-4 px-4 md:p-0 md:static fade-in-up" style="transition-delay: 400ms;">
@@ -268,20 +259,6 @@
         <!-- Tools Grid -->
         <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 min-h-[400px]">
             <!-- Tools injected via JS -->
-        </div>
-
-        <!-- Ad Banner Bottom -->
-        <div class="mt-32 max-w-5xl mx-auto fade-in-up">
-            <div class="flex items-center gap-6 mb-8">
-                <div class="h-px bg-gradient-to-r from-transparent via-border to-transparent flex-1"></div>
-                <span class="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground/50" id="ad-label-bottom">إعلان</span>
-                <div class="h-px bg-gradient-to-r from-transparent via-border to-transparent flex-1"></div>
-            </div>
-            <div class="relative overflow-hidden rounded-xl border border-dashed border-primary/10 bg-gradient-to-br from-primary/5 via-background to-secondary/5 p-4 flex flex-col items-center justify-center text-center shadow-2xl h-[250px]">
-                <div class="w-16 h-16 mb-2 rounded-full bg-primary/10 flex items-center justify-center text-3xl">📢</div>
-                <p class="text-sm text-muted-foreground font-medium">Premium Ad Space</p>
-                <p class="text-xs text-muted-foreground/60 mt-1">Targeted ads for AI enthusiasts</p>
-            </div>
         </div>
 
     </main>
@@ -306,7 +283,6 @@
                 subtitle: "Discover the best AI tools for your needs",
                 search: "Search for tools...",
                 visit: "Visit Website",
-                adLabel: "Advertisement",
                 categories: {
                     all: "All",
                     study: "Study",
@@ -318,9 +294,7 @@
                     freelance: "Freelance",
                     websites: "Websites",
                     seo: "SEO"
-                },
-                adCardTitle: "Premium Ad Space",
-                adCardDesc: "Make your brand shine here."
+                }
             },
             ar: {
                 title1: "دليل",
@@ -328,7 +302,6 @@
                 subtitle: "اكتشف أفضل أدوات الذكاء الاصطناعي لاحتياجاتك",
                 search: "ابحث عن الأدوات...",
                 visit: "زيارة الموقع",
-                adLabel: "إعلان",
                 categories: {
                     all: "الكل",
                     study: "الدراسة",
@@ -340,23 +313,384 @@
                     freelance: "العمل الحر",
                     websites: "المواقع",
                     seo: "السيو"
-                },
-                adCardTitle: "مساحة إعلانية مميزة",
-                adCardDesc: "اجعل علامتك التجارية تتألق هنا."
+                }
             }
         };
 
-        const toolNames = {
-            study: ['ScholarAI', 'Consensus', 'Elicit', 'Perplexity', 'Socratic', 'Quizlet AI', 'Gradescope', 'Otter.ai', 'Humata', 'ChatPDF'],
-            programming: ['GitHub Copilot', 'Tabnine', 'Replit Ghostwriter', 'Cursor', 'Amazon CodeWhisperer', 'Codeium', 'Blackbox', 'AskCodi', 'Sourcegraph', 'DeepCode'],
-            design: ['Canva Magic', 'Adobe Firefly', 'Midjourney', 'Khroma', 'Uizard', 'Looka', 'Autodraw', 'Fontjoy', 'Colormind', 'Let\'s Enhance'],
-            images: ['DALL-E 3', 'Midjourney v6', 'Stable Diffusion', 'Leonardo.ai', 'Clipdrop', 'Runway Gen-2', 'Playground AI', 'Bing Image Creator', 'Adobe Firefly', 'Imagine'],
-            translation: ['DeepL', 'Google Translate', 'Quillbot', 'Reverso', 'MateCat', 'Smartcat', 'Wordtune', 'Systran', 'Bing Translator', 'Yandex Translate'],
-            video: ['Runway', 'Synthesia', 'HeyGen', 'Descript', 'InVideo', 'Pictory', 'Fliki', 'D-ID', 'Kaiber', 'Wonder Dynamics'],
-            freelance: ['Upwork AI', 'Fiverr Neo', 'Contra', 'Braintrust', 'Toptal', 'Freelancer', 'Guru', 'PeoplePerHour', '99designs', 'Dribbble'],
-            websites: ['Wix ADI', 'Framer AI', '10Web', 'Durable', 'Hocoos', 'Mixo', 'Relume', 'Webflow AI', 'Hostinger AI', 'Divi AI'],
-            seo: ['Surfer SEO', 'Jasper', 'Semrush', 'Ahrefs', 'MarketMuse', 'Frase', 'Clearscope', 'RankMath', 'Yoast AI', 'GrowthBar']
-        };
+        const toolDescriptions = {
+            // Study
+            'ScholarAI': {
+                en: 'AI-powered research assistant that helps find and analyze academic papers with natural language queries.',
+                ar: 'مساعد بحث مدعوم بالذكاء الاصطناعي يساعد في العثور على الأوراق الأكاديمية وتحليلها باستخدام الاستعلامات اللغوية الطبيعية.'
+            },
+            'Consensus': {
+                en: 'Search engine for scientific research papers using AI to extract key insights and findings from peer-reviewed studies.',
+                ar: 'محرك بحث للأوراق البحثية العلمية يستخدم الذكاء الاصطناعي لاستخراج الرؤى والنتائج الرئيسية من الدراسات المراجعة.'
+            },
+            'Elicit': {
+                en: 'AI research assistant that automates literature reviews and answers research questions using academic papers.',
+                ar: 'مساعد بحث بالذكاء الاصطناعي يقوم بأتمتة مراجعات الأدبيات ويجيب على الأسئلة البحثية باستخدام الأوراق الأكاديمية.'
+            },
+            'Perplexity': {
+                en: 'AI-powered answer engine that provides accurate, cited responses to questions with real-time web search.',
+                ar: 'محرك إجابات مدعوم بالذكاء الاصطناعي يوفر إجابات دقيقة ومُوثقة للأسئلة مع بحث الويب في الوقت الفعلي.'
+            },
+            'Socratic': {
+                en: 'Google\'s learning app that uses AI to help students understand homework by taking photos of questions.',
+                ar: 'تطبيق تعليمي من جوجل يستخدم الذكاء الاصطناعي لمساعدة الطلاب على فهم الواجبات المنزلية من خلال التقاط صور للأسئلة.'
+            },
+            'Quizlet AI': {
+                en: 'Smart study tools with AI-powered flashcards, practice tests, and personalized learning recommendations.',
+                ar: 'أدوات دراسة ذكية مع بطاقات تعليمية مدعومة بالذكاء الاصطناعي واختبارات تدريبية وتوصيات تعليمية شخصية.'
+            },
+            'Gradescope': {
+                en: 'AI-assisted grading platform that helps educators efficiently grade and provide feedback on assignments.',
+                ar: 'منصة تقييم بمساعدة الذكاء الاصطناعي تساعد المعلمين على تقييم الواجبات وتقديم الملاحظات بكفاءة.'
+            },
+            'Otter.ai': {
+                en: 'AI meeting assistant that records audio, writes notes, captures action items, and generates summaries automatically.',
+                ar: 'مساعد اجتماعات بالذكاء الاصطناعي يسجل الصوت ويكتب الملاحظات ويلتقط عناصر العمل ويُنشئ الملخصات تلقائيًا.'
+            },
+            'Humata': {
+                en: 'AI that instantly answers questions about your files, summarizes documents, and extracts key information.',
+                ar: 'ذكاء اصطناعي يجيب فورًا على أسئلة حول ملفاتك ويلخص المستندات ويستخرج المعلومات الرئيسية.'
+            },
+            'ChatPDF': {
+                en: 'AI chatbot for PDF documents that allows you to ask questions and get instant answers from any PDF.',
+                ar: 'روبوت محادثة بالذكاء الاصطناعي لمستندات PDF يتيح لك طرح الأسئلة والحصول على إجابات فورية من أي ملف PDF.'
+            },
+
+            // Programming
+            'GitHub Copilot': {
+                en: 'AI pair programmer that suggests code and entire functions in real-time as you type in your editor.',
+                ar: 'مبرمج مساعد بالذكاء الاصطناعي يقترح الأكواد والوظائف الكاملة في الوقت الفعلي أثناء الكتابة في المحرر.'
+            },
+            'Tabnine': {
+                en: 'AI code completion tool that predicts and suggests your next lines of code based on context and patterns.',
+                ar: 'أداة إكمال الأكواد بالذكاء الاصطناعي تتنبأ وتقترح الأسطر التالية من الكود بناءً على السياق والأنماط.'
+            },
+            'Replit Ghostwriter': {
+                en: 'AI coding assistant built into Replit that helps write, debug, and explain code directly in the browser.',
+                ar: 'مساعد برمجة بالذكاء الاصطناعي مدمج في Replit يساعد في كتابة وتصحيح وشرح الكود مباشرة في المتصفح.'
+            },
+            'Cursor': {
+                en: 'AI-first code editor that understands your codebase and helps you write, edit, and debug code faster.',
+                ar: 'محرر أكواد يعتمد على الذكاء الاصطناعي يفهم قاعدة الأكواد الخاصة بك ويساعدك في الكتابة والتحرير وتصحيح الأخطاء بشكل أسرع.'
+            },
+            'Amazon CodeWhisperer': {
+                en: 'AI coding companion from AWS that generates code suggestions based on comments and existing code.',
+                ar: 'رفيق برمجة بالذكاء الاصطناعي من AWS يُنشئ اقتراحات الأكواد بناءً على التعليقات والكود الموجود.'
+            },
+            'Codeium': {
+                en: 'Free AI-powered code acceleration toolkit offering autocomplete and natural language search for code.',
+                ar: 'مجموعة أدوات تسريع الأكواد المجانية المدعومة بالذكاء الاصطناعي توفر الإكمال التلقائي والبحث باللغة الطبيعية للأكواد.'
+            },
+            'Blackbox': {
+                en: 'AI coding assistant that turns questions into code and helps developers code 10x faster with autocomplete.',
+                ar: 'مساعد برمجة بالذكاء الاصطناعي يحول الأسئلة إلى أكواد ويساعد المطورين على البرمجة بسرعة أكبر 10 مرات مع الإكمال التلقائي.'
+            },
+            'AskCodi': {
+                en: 'AI development assistant providing code generation, documentation, test creation, and code explanations.',
+                ar: 'مساعد تطوير بالذكاء الاصطناعي يوفر إنشاء الأكواد والتوثيق وإنشاء الاختبارات وشرح الأكواد.'
+            },
+            'Sourcegraph': {
+                en: 'AI coding assistant (Cody) that helps you understand, write, and fix code across your entire codebase.',
+                ar: 'مساعد برمجة بالذكاء الاصطناعي (Cody) يساعدك على فهم وكتابة وإصلاح الأكواد عبر قاعدة الأكواد الكاملة الخاصة بك.'
+            },
+            'DeepCode': {
+                en: 'AI-powered code review tool by Snyk that finds bugs, security vulnerabilities, and code quality issues.',
+                ar: 'أداة مراجعة الأكواد المدعومة بالذكاء الاصطناعي من Snyk تعثر على الأخطاء والثغرات الأمنية ومشاكل جودة الكود.'
+            },
+
+            // Design
+            'Canva Magic': {
+                en: 'AI-powered design features in Canva including Magic Write, Magic Edit, and instant design generation.',
+                ar: 'ميزات التصميم المدعومة بالذكاء الاصطناعي في Canva بما في ذلك الكتابة السحرية والتحرير السحري وإنشاء التصميم الفوري.'
+            },
+            'Adobe Firefly': {
+                en: 'Adobe\'s generative AI for creating images, text effects, and design elements from text descriptions.',
+                ar: 'الذكاء الاصطناعي التوليدي من Adobe لإنشاء الصور وتأثيرات النصوص وعناصر التصميم من الأوصاف النصية.'
+            },
+            'Midjourney': {
+                en: 'Leading AI art generator that creates stunning, highly detailed images from text prompts via Discord.',
+                ar: 'مولد فنون بالذكاء الاصطناعي رائد يُنشئ صورًا مذهلة ومفصلة للغاية من مطالبات نصية عبر Discord.'
+            },
+            'Khroma': {
+                en: 'AI color tool that learns your preferences and generates unlimited color palettes and combinations.',
+                ar: 'أداة ألوان بالذكاء الاصطناعي تتعلم تفضيلاتك وتُنشئ لوحات ألوان وتركيبات غير محدودة.'
+            },
+            'Uizard': {
+                en: 'AI design tool that transforms hand-drawn sketches and screenshots into editable digital designs.',
+                ar: 'أداة تصميم بالذكاء الاصطناعي تحول الرسومات اليدوية ولقطات الشاشة إلى تصميمات رقمية قابلة للتحرير.'
+            },
+            'Looka': {
+                en: 'AI logo maker and brand identity platform that creates professional logos and branding materials.',
+                ar: 'صانع شعارات بالذكاء الاصطناعي ومنصة هوية العلامة التجارية تُنشئ شعارات احترافية ومواد العلامة التجارية.'
+            },
+            'Autodraw': {
+                en: 'Google\'s AI drawing tool that recognizes your rough sketches and suggests professional drawings.',
+                ar: 'أداة رسم بالذكاء الاصطناعي من جوجل تتعرف على رسوماتك الأولية وتقترح رسومات احترافية.'
+            },
+            'Fontjoy': {
+                en: 'AI font pairing tool that uses deep learning to generate beautiful font combinations for designs.',
+                ar: 'أداة مطابقة الخطوط بالذكاء الاصطناعي تستخدم التعلم العميق لإنشاء تركيبات خطوط جميلة للتصميمات.'
+            },
+            'Colormind': {
+                en: 'AI color scheme generator that creates cohesive color palettes for websites, graphics, and designs.',
+                ar: 'مولد مخططات الألوان بالذكاء الاصطناعي ينشئ لوحات ألوان متماسكة للمواقع والرسومات والتصميمات.'
+            },
+            'Let\'s Enhance': {
+                en: 'AI image upscaler that increases image resolution and quality without losing detail or clarity.',
+                ar: 'محسّن الصور بالذكاء الاصطناعي يزيد من دقة وجودة الصورة دون فقدان التفاصيل أو الوضوح.'
+            },
+
+            // Images
+            'DALL-E 3': {
+                en: 'OpenAI\'s latest image generation model that creates highly accurate images from detailed text descriptions.',
+                ar: 'أحدث نموذج لتوليد الصور من OpenAI ينشئ صورًا عالية الدقة من الأوصاف النصية التفصيلية.'
+            },
+            'Midjourney v6': {
+                en: 'Latest version of Midjourney with improved photorealism, better text rendering, and enhanced detail.',
+                ar: 'أحدث إصدار من Midjourney مع واقعية محسّنة وعرض أفضل للنصوص وتفاصيل معززة.'
+            },
+            'Stable Diffusion': {
+                en: 'Open-source AI image generator that creates detailed images from text with full customization control.',
+                ar: 'مولد صور بالذكاء الاصطناعي مفتوح المصدر ينشئ صورًا مفصلة من النص مع تحكم كامل في التخصيص.'
+            },
+            'Leonardo.ai': {
+                en: 'AI art generator focused on game assets, with tools for creating characters, items, and environments.',
+                ar: 'مولد فنون بالذكاء الاصطناعي يركز على أصول الألعاب، مع أدوات لإنشاء الشخصيات والعناصر والبيئات.'
+            },
+            'Clipdrop': {
+                en: 'AI-powered visual toolkit for removing backgrounds, enhancing images, and creating professional visuals.',
+                ar: 'مجموعة أدوات مرئية مدعومة بالذكاء الاصطناعي لإزالة الخلفيات وتحسين الصور وإنشاء مرئيات احترافية.'
+            },
+            'Runway Gen-2': {
+                en: 'AI model that generates videos from text, images, or video clips with cinematic quality.',
+                ar: 'نموذج ذكاء اصطناعي يُنشئ مقاطع فيديو من النصوص أو الصور أو مقاطع الفيديو بجودة سينمائية.'
+            },
+            'Playground AI': {
+                en: 'Free AI image creator with advanced editing tools, multiple models, and commercial use rights.',
+                ar: 'منشئ صور بالذكاء الاصطناعي مجاني مع أدوات تحرير متقدمة ونماذج متعددة وحقوق الاستخدام التجاري.'
+            },
+            'Bing Image Creator': {
+                en: 'Microsoft\'s AI image generator powered by DALL-E, integrated with Bing for free image creation.',
+                ar: 'مولد الصور بالذكاء الاصطناعي من مايكروسوفت مدعوم بـ DALL-E، مدمج مع Bing لإنشاء الصور مجانًا.'
+            },
+            'Imagine': {
+                en: 'AI art generator that creates unique images from text with various artistic styles and effects.',
+                ar: 'مولد فنون بالذكاء الاصطناعي ينشئ صورًا فريدة من النص مع أنماط وتأثيرات فنية متنوعة.'
+            },
+
+            // Translation
+            'DeepL': {
+                en: 'AI-powered translator known for highly accurate, natural-sounding translations in 31 languages.',
+                ar: 'مترجم مدعوم بالذكاء الاصطناعي معروف بالترجمات الدقيقة والطبيعية للغاية في 31 لغة.'
+            },
+            'Google Translate': {
+                en: 'Free multilingual translation service supporting 133 languages with text, speech, and image translation.',
+                ar: 'خدمة ترجمة متعددة اللغات مجانية تدعم 133 لغة مع ترجمة النصوص والكلام والصور.'
+            },
+            'Quillbot': {
+                en: 'AI writing and paraphrasing tool that rewrites text while maintaining meaning and improving clarity.',
+                ar: 'أداة كتابة وإعادة صياغة بالذكاء الاصطناعي تعيد كتابة النص مع الحفاظ على المعنى وتحسين الوضوح.'
+            },
+            'Reverso': {
+                en: 'Translation platform with context examples, grammar checker, and conjugation tools for language learning.',
+                ar: 'منصة ترجمة مع أمثلة سياقية ومدقق نحوي وأدوات تصريف للتعلم اللغوي.'
+            },
+            'MateCat': {
+                en: 'Free professional translation tool with AI assistance, translation memory, and quality estimation.',
+                ar: 'أداة ترجمة احترافية مجانية بمساعدة الذكاء الاصطناعي وذاكرة الترجمة وتقدير الجودة.'
+            },
+            'Smartcat': {
+                en: 'AI-powered translation platform for businesses with collaborative tools and automated workflows.',
+                ar: 'منصة ترجمة مدعومة بالذكاء الاصطناعي للشركات مع أدوات تعاونية وسير عمل آلي.'
+            },
+            'Wordtune': {
+                en: 'AI writing companion that suggests better ways to phrase sentences for clearer communication.',
+                ar: 'رفيق كتابة بالذكاء الاصطناعي يقترح طرقًا أفضل لصياغة الجمل لتواصل أوضح.'
+            },
+            'Systran': {
+                en: 'Enterprise AI translation solution offering real-time translation and industry-specific terminology.',
+                ar: 'حل ترجمة بالذكاء الاصطناعي للمؤسسات يقدم ترجمة في الوقت الفعلي ومصطلحات خاصة بالصناعة.'
+            },
+            'Bing Translator': {
+                en: 'Microsoft\'s translation service with text, voice, and image translation in over 100 languages.',
+                ar: 'خدمة الترجمة من مايكروسوفت مع ترجمة النصوص والصوت والصور في أكثر من 100 لغة.'
+            },
+            'Yandex Translate': {
+                en: 'Free translation service supporting 100+ languages with offline mode and text recognition from images.',
+                ar: 'خدمة ترجمة مجانية تدعم أكثر من 100 لغة مع وضع عدم الاتصال والتعرف على النصوص من الصور.'
+            },
+
+            // Video
+            'Runway': {
+                en: 'AI video editing platform with generative tools for creating, editing, and enhancing video content.',
+                ar: 'منصة تحرير فيديو بالذكاء الاصطناعي مع أدوات توليدية لإنشاء محتوى الفيديو وتحريره وتحسينه.'
+            },
+            'Synthesia': {
+                en: 'AI video generation platform that creates videos with AI avatars speaking in 120+ languages.',
+                ar: 'منصة إنشاء فيديو بالذكاء الاصطناعي تنشئ مقاطع فيديو مع صور رمزية بالذكاء الاصطناعي تتحدث بأكثر من 120 لغة.'
+            },
+            'HeyGen': {
+                en: 'AI video platform for creating spokesperson videos with customizable avatars and voice cloning.',
+                ar: 'منصة فيديو بالذكاء الاصطناعي لإنشاء فيديوهات المتحدث مع صور رمزية قابلة للتخصيص واستنساخ الصوت.'
+            },
+            'Descript': {
+                en: 'All-in-one video and audio editor that uses AI for transcription, overdub, and studio-quality sound.',
+                ar: 'محرر فيديو وصوت شامل يستخدم الذكاء الاصطناعي للنسخ والدبلجة والصوت بجودة الاستوديو.'
+            },
+            'InVideo': {
+                en: 'AI video creation platform with templates, text-to-video, and automated editing for marketing content.',
+                ar: 'منصة إنشاء فيديو بالذكاء الاصطناعي مع قوالب ونص إلى فيديو وتحرير آلي لمحتوى التسويق.'
+            },
+            'Pictory': {
+                en: 'AI video maker that converts long-form content into short, shareable videos automatically.',
+                ar: 'صانع فيديو بالذكاء الاصطناعي يحول المحتوى الطويل إلى مقاطع فيديو قصيرة قابلة للمشاركة تلقائيًا.'
+            },
+            'Fliki': {
+                en: 'Text-to-video platform using AI voices and media library to create videos in minutes.',
+                ar: 'منصة نص إلى فيديو تستخدم أصوات الذكاء الاصطناعي ومكتبة الوسائط لإنشاء مقاطع فيديو في دقائق.'
+            },
+            'D-ID': {
+                en: 'AI platform that creates talking avatars from photos using generative AI and natural text-to-speech.',
+                ar: 'منصة ذكاء اصطناعي تنشئ صورًا رمزية ناطقة من الصور باستخدام الذكاء الاصطناعي التوليدي والنص إلى كلام الطبيعي.'
+            },
+            'Kaiber': {
+                en: 'AI video generation tool that transforms images, music, and text into stunning animated videos.',
+                ar: 'أداة إنشاء فيديو بالذكاء الاصطناعي تحول الصور والموسيقى والنص إلى مقاطع فيديو متحركة مذهلة.'
+            },
+            'Wonder Dynamics': {
+                en: 'AI tool that automatically animates, lights, and composes CG characters into live-action scenes.',
+                ar: 'أداة ذكاء اصطناعي تحرك وتضيء وتركب شخصيات CG تلقائيًا في مشاهد الحركة الحية.'
+            },
+
+            // Freelance
+            'Upwork AI': {
+                en: 'Leading freelance marketplace now with AI tools to match freelancers with perfect job opportunities.',
+                ar: 'سوق العمل الحر الرائد الآن مع أدوات الذكاء الاصطناعي لمطابقة المستقلين مع فرص العمل المثالية.'
+            },
+            'Fiverr Neo': {
+                en: 'AI-powered features on Fiverr helping sellers optimize gigs and buyers find the right services.',
+                ar: 'ميزات مدعومة بالذكاء الاصطناعي على Fiverr تساعد البائعين على تحسين الخدمات والمشترين على إيجاد الخدمات المناسبة.'
+            },
+            'Contra': {
+                en: 'Commission-free freelance platform with portfolio tools and direct client-freelancer connections.',
+                ar: 'منصة عمل حر بدون عمولة مع أدوات المحفظة والاتصالات المباشرة بين العميل والمستقل.'
+            },
+            'Braintrust': {
+                en: 'Decentralized talent network connecting skilled freelancers with enterprises using blockchain and AI.',
+                ar: 'شبكة مواهب لامركزية تربط المستقلين المهرة بالمؤسسات باستخدام تقنية البلوكشين والذكاء الاصطناعي.'
+            },
+            'Toptal': {
+                en: 'Exclusive network of top 3% freelance developers, designers, and finance experts with rigorous screening.',
+                ar: 'شبكة حصرية من أفضل 3٪ من المطورين والمصممين وخبراء المالية المستقلين مع فحص صارم.'
+            },
+            'Freelancer': {
+                en: 'Global freelancing platform with contests, fixed-price projects, and hourly work opportunities.',
+                ar: 'منصة عمل حر عالمية مع مسابقات ومشاريع بسعر ثابت وفرص عمل بالساعة.'
+            },
+            'Guru': {
+                en: 'Freelance marketplace with WorkRooms for collaboration and flexible payment terms.',
+                ar: 'سوق عمل حر مع غرف العمل للتعاون وشروط دفع مرنة.'
+            },
+            'PeoplePerHour': {
+                en: 'UK-based freelance platform connecting businesses with freelancers for project-based work.',
+                ar: 'منصة عمل حر مقرها المملكة المتحدة تربط الشركات بالمستقلين للعمل القائم على المشاريع.'
+            },
+            '99designs': {
+                en: 'Design contest platform where businesses get multiple design options from global designers.',
+                ar: 'منصة مسابقات التصميم حيث تحصل الشركات على خيارات تصميم متعددة من مصممين عالميين.'
+            },
+            'Dribbble': {
+                en: 'Design community and job board where creatives showcase work and connect with opportunities.',
+                ar: 'مجتمع التصميم ولوحة الوظائف حيث يعرض المبدعون أعمالهم ويتواصلون مع الفرص.'
+            },
+
+            // Websites
+            'Wix ADI': {
+                en: 'AI website builder that creates custom websites in minutes based on your answers to simple questions.',
+                ar: 'منشئ مواقع بالذكاء الاصطناعي ينشئ مواقع ويب مخصصة في دقائق بناءً على إجاباتك على أسئلة بسيطة.'
+            },
+            'Framer AI': {
+                en: 'Design tool with AI features that generates layouts, writes copy, and creates responsive websites.',
+                ar: 'أداة تصميم مع ميزات الذكاء الاصطناعي تُنشئ التخطيطات وتكتب النسخ وتُنشئ مواقع ويب متجاوبة.'
+            },
+            '10Web': {
+                en: 'AI-powered WordPress platform that builds, hosts, and optimizes websites automatically.',
+                ar: 'منصة WordPress مدعومة بالذكاء الاصطناعي تبني وتستضيف وتحسن المواقع تلقائيًا.'
+            },
+            'Durable': {
+                en: 'AI website builder that creates complete business websites with content and images in 30 seconds.',
+                ar: 'منشئ مواقع بالذكاء الاصطناعي ينشئ مواقع ويب تجارية كاملة مع المحتوى والصور في 30 ثانية.'
+            },
+            'Hocoos': {
+                en: 'AI website builder answering 8 questions to generate professional websites with logo and content.',
+                ar: 'منشئ مواقع بالذكاء الاصطناعي يجيب على 8 أسئلة لإنشاء مواقع ويب احترافية مع الشعار والمحتوى.'
+            },
+            'Mixo': {
+                en: 'AI-powered website launcher that creates landing pages for startups in seconds from brief descriptions.',
+                ar: 'مُطلق مواقع مدعوم بالذكاء الاصطناعي ينشئ صفحات هبوط للشركات الناشئة في ثوانٍ من أوصاف موجزة.'
+            },
+            'Relume': {
+                en: 'AI sitemap and wireframe generator that speeds up website design process for Figma and Webflow.',
+                ar: 'مولد خرائط المواقع والإطارات السلكية بالذكاء الاصطناعي يسرع عملية تصميم المواقع لـ Figma و Webflow.'
+            },
+            'Webflow AI': {
+                en: 'Professional website builder now with AI features for generating layouts, content, and designs.',
+                ar: 'منشئ مواقع احترافي الآن مع ميزات الذكاء الاصطناعي لإنشاء التخطيطات والمحتوى والتصميمات.'
+            },
+            'Hostinger AI': {
+                en: 'Web hosting with AI website builder creating custom sites from descriptions in minutes.',
+                ar: 'استضافة ويب مع منشئ مواقع بالذكاء الاصطناعي ينشئ مواقع مخصصة من الأوصاف في دقائق.'
+            },
+            'Divi AI': {
+                en: 'AI-powered features in Divi theme generating text, images, and code directly in the page builder.',
+                ar: 'ميزات مدعومة بالذكاء الاصطناعي في سمة Divi تُنشئ النصوص والصور والأكواد مباشرة في منشئ الصفحات.'
+            },
+
+            // SEO
+            'Surfer SEO': {
+                en: 'AI-powered SEO tool that analyzes top-ranking pages and optimizes content for better search rankings.',
+                ar: 'أداة SEO مدعومة بالذكاء الاصطناعي تحلل الصفحات الأعلى تصنيفًا وتحسن المحتوى لتصنيفات بحث أفضل.'
+            },
+            'Jasper': {
+                en: 'AI content platform creating SEO-optimized blog posts, marketing copy, and social media content.',
+                ar: 'منصة محتوى بالذكاء الاصطناعي تنشئ منشورات مدونة محسّنة لـ SEO ونسخ تسويقية ومحتوى وسائل التواصل الاجتماعي.'
+            },
+            'Semrush': {
+                en: 'Comprehensive SEO and marketing platform with keyword research, competitor analysis, and site audits.',
+                ar: 'منصة SEO والتسويق الشاملة مع البحث عن الكلمات الرئيسية وتحليل المنافسين وعمليات تدقيق الموقع.'
+            },
+            'Ahrefs': {
+                en: 'Powerful SEO toolset for backlink analysis, keyword research, content exploration, and rank tracking.',
+                ar: 'مجموعة أدوات SEO قوية لتحليل الروابط الخلفية والبحث عن الكلمات الرئيسية واستكشاف المحتوى وتتبع الترتيب.'
+            },
+            'MarketMuse': {
+                en: 'AI content intelligence platform analyzing content gaps and providing data-driven optimization strategies.',
+                ar: 'منصة ذكاء المحتوى بالذكاء الاصطناعي تحلل فجوات المحتوى وتوفر استراتيجيات تحسين قائمة على البيانات.'
+            },
+            'Frase': {
+                en: 'AI writing tool for SEO content that researches, outlines, writes, and optimizes articles.',
+                ar: 'أداة كتابة بالذكاء الاصطناعي لمحتوى SEO تبحث وتُحدد وتكتب وتحسن المقالات.'
+            },
+            'Clearscope': {
+                en: 'Content optimization platform using AI to improve content relevance and search performance.',
+                ar: 'منصة تحسين المحتوى باستخدام الذكاء الاصطناعي لتحسين صلة المحتوى وأداء البحث.'
+            },
+            'RankMath': {
+                en: 'WordPress SEO plugin with AI features for content optimization and automated technical SEO.',
+                ar: 'مكون WordPress SEO مع ميزات الذكاء الاصطناعي لتحسين المحتوى وSEO التقني الآلي.'
+            },
+            'Yoast AI': {
+                en: 'Popular WordPress SEO plugin now with AI-powered features for title and meta description generation.',
+                ar: 'مكون WordPress SEO الشهير الآن مع ميزات مدعومة بالذكاء الاصطناعي لإنشاء العناوين والأوصاف التعريفية.'
+            },
+            'GrowthBar': {
+                en: 'AI writing and SEO tool for creating optimized blog content with keyword research and tracking.',
+                ar: 'أداة كتابة وSEO بالذكاء الاصطناعي لإنشاء محتوى مدونة محسّن مع البحث عن الكلمات الرئيسية والتتبع.'
+            }};
 
         const toolUrls = {
           // Study
@@ -467,22 +801,19 @@
           'GrowthBar': 'https://growthbarseo.com'
         };
 
-        const categoriesList = ['study', 'programming', 'design', 'images', 'translation', 'video', 'freelance', 'websites', 'seo'];
+        const toolNames = {
+            study: ['ScholarAI', 'Consensus', 'Elicit', 'Perplexity', 'Socratic', 'Quizlet AI', 'Gradescope', 'Otter.ai', 'Humata', 'ChatPDF'],
+            programming: ['GitHub Copilot', 'Tabnine', 'Replit Ghostwriter', 'Cursor', 'Amazon CodeWhisperer', 'Codeium', 'Blackbox', 'AskCodi', 'Sourcegraph', 'DeepCode'],
+            design: ['Canva Magic', 'Adobe Firefly', 'Midjourney', 'Khroma', 'Uizard', 'Looka', 'Autodraw', 'Fontjoy', 'Colormind', 'Let\'s Enhance'],
+            images: ['DALL-E 3', 'Midjourney v6', 'Stable Diffusion', 'Leonardo.ai', 'Clipdrop', 'Runway Gen-2', 'Playground AI', 'Bing Image Creator', 'Imagine'],
+            translation: ['DeepL', 'Google Translate', 'Quillbot', 'Reverso', 'MateCat', 'Smartcat', 'Wordtune', 'Systran', 'Bing Translator', 'Yandex Translate'],
+            video: ['Runway', 'Synthesia', 'HeyGen', 'Descript', 'InVideo', 'Pictory', 'Fliki', 'D-ID', 'Kaiber', 'Wonder Dynamics'],
+            freelance: ['Upwork AI', 'Fiverr Neo', 'Contra', 'Braintrust', 'Toptal', 'Freelancer', 'Guru', 'PeoplePerHour', '99designs', 'Dribbble'],
+            websites: ['Wix ADI', 'Framer AI', '10Web', 'Durable', 'Hocoos', 'Mixo', 'Relume', 'Webflow AI', 'Hostinger AI', 'Divi AI'],
+            seo: ['Surfer SEO', 'Jasper', 'Semrush', 'Ahrefs', 'MarketMuse', 'Frase', 'Clearscope', 'RankMath', 'Yoast AI', 'GrowthBar']
+        };
 
-        function getArabicCategory(cat) {
-            const map = {
-                study: "الدراسة",
-                programming: "البرمجة",
-                design: "التصميم",
-                images: "الصور",
-                translation: "الترجمة",
-                video: "الفيديو",
-                freelance: "العمل الحر",
-                websites: "المواقع",
-                seo: "السيو"
-            };
-            return map[cat] || cat;
-        }
+        const categoriesList = ['study', 'programming', 'design', 'images', 'translation', 'video', 'freelance', 'websites', 'seo'];
 
         const tools = [];
         categoriesList.forEach(cat => {
@@ -491,9 +822,9 @@
                     id: `${cat}-${idx}`,
                     name: name,
                     category: cat,
-                    description: {
-                        en: `Powerful AI tool for ${cat} tasks. Automate your workflow with ${name}.`,
-                        ar: `أداة ذكاء اصطناعي قوية لمهام ${getArabicCategory(cat)}. أتمتة سير عملك باستخدام ${name}.`
+                    description: toolDescriptions[name] || {
+                        en: `Powerful AI tool for ${cat} tasks.`,
+                        ar: `أداة ذكاء اصطناعي قوية لمهام ${cat}.`
                     },
                     image: `https://placehold.co/600x400/2563eb/white?text=${encodeURIComponent(name)}`,
                     url: toolUrls[name] || '#'
@@ -502,7 +833,7 @@
         });
 
         // --- State ---
-        let currentLang = 'ar';
+        let currentLang = 'en';
         let activeCategory = 'all';
         let searchQuery = '';
         let isDark = false;
@@ -562,7 +893,6 @@
             document.documentElement.lang = currentLang;
             document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
             
-            // Update button text
             document.getElementById('lang-btn').innerText = currentLang === 'ar' ? 'EN' : 'AR';
             
             updateText();
@@ -606,8 +936,6 @@
             document.getElementById('hero-title-1').innerText = t.title1;
             document.getElementById('hero-title-2').innerText = t.title2;
             document.getElementById('hero-subtitle').innerText = t.subtitle;
-            document.getElementById('ad-label-top').innerText = t.adLabel;
-            document.getElementById('ad-label-bottom').innerText = t.adLabel;
             
             searchInputHero.placeholder = t.search;
             searchInputDesktop.placeholder = t.search;
@@ -617,7 +945,6 @@
             const t = translations[currentLang].categories;
             let html = '';
             
-            // All Button
             const allActive = activeCategory === 'all';
             const btnClass = "rounded-full px-6 transition-all duration-300 h-9 flex items-center";
             const activeClass = "bg-primary text-primary-foreground shadow-lg shadow-primary/25";
@@ -664,7 +991,6 @@
                 const delay = index * 50;
                 html += `
                 <div class="group h-full relative overflow-hidden border border-border/40 bg-card/40 backdrop-blur-md hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 flex flex-col rounded-2xl fade-in-up" style="animation-delay: ${delay}ms">
-                    <!-- Glow -->
                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 pointer-events-none z-0"></div>
                     
                     <div class="relative h-52 overflow-hidden m-2 rounded-xl">
@@ -696,38 +1022,10 @@
                 `;
             });
 
-            // Native Ad Card
-            html += `
-            <div class="group h-full relative overflow-hidden border border-dashed border-primary/30 bg-gradient-to-b from-primary/5 to-transparent backdrop-blur-sm hover:border-primary/50 flex flex-col rounded-2xl fade-in-up">
-                <div class="absolute top-0 left-0 bg-primary/10 text-[10px] font-bold px-2 py-0.5 text-primary rounded-br-lg z-30 uppercase tracking-widest border-r border-b border-primary/20">Ad</div>
-                
-                <div class="relative h-52 overflow-hidden bg-muted flex items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10 group-hover:from-primary/20 group-hover:to-secondary/20 transition-colors duration-500 m-2 rounded-xl">
-                    <div class="w-16 h-16 rounded-full bg-background/80 backdrop-blur flex items-center justify-center shadow-sm border border-primary/20 text-4xl z-20 transform group-hover:scale-105 transition-transform duration-500">📢</div>
-                    <div class="absolute top-3 right-3 z-20 bg-primary text-primary-foreground px-2 py-1 rounded text-xs shadow-sm flex items-center gap-1">
-                        <i data-lucide="megaphone" class="w-3 h-3"></i>
-                        ${t.adLabel}
-                    </div>
-                </div>
-
-                <div class="p-4 flex-grow relative z-10 flex flex-col">
-                    <h3 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-2">${t.adCardTitle}</h3>
-                    <p class="text-muted-foreground text-sm line-clamp-3 leading-relaxed mb-4">
-                        ${t.adCardDesc}
-                    </p>
-                     <a href="#" target="_blank" class="mt-auto w-full rounded-xl bg-gradient-to-r from-primary to-secondary text-white hover:opacity-90 transition-all border-none shadow-md hover:shadow-lg flex items-center justify-center h-10 gap-2 font-medium text-sm">
-                        ${t.visit}
-                        <i data-lucide="external-link" class="w-4 h-4"></i>
-                    </a>
-                </div>
-            </div>
-            `;
-
             toolsGrid.innerHTML = html;
             
-            // Re-initialize icons for new elements
             lucide.createIcons();
             
-            // Re-observe new elements
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -736,7 +1034,6 @@
             document.querySelectorAll('.fade-in-up:not(.visible)').forEach(el => observer.observe(el));
         }
 
-        // Run
         init();
 
     </script>
